@@ -61,4 +61,4 @@ cd .dev-env
 git checkout ${BRANCH}
 
 # Run Ansible playbook
-# ansible-playbook ubuntu.yml -i hosts -vv ${ANSIBLE_ARGS}
+ansible-playbook ubuntu.yml -i hosts -vv ${ANSIBLE_ARGS}
