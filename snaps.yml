@@ -1,0 +1,11 @@
+---
+- include_vars: vars.yml
+
+
+- name: Install snaps
+  become: yes
+  snap:
+    name: "{{ item.value.name }}"
+    channel: "{{ item.value.channel }}"
+    classic: "{{ item.value.classic }}"
+  with_dict: "{{ snaps }}"

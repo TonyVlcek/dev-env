@@ -28,9 +28,21 @@ ppas:
  - ppa:linuxuprising/shutter
 
 snaps:
- - slack
- - spotify
- - filezilla
+ slack:
+  name: slack
+  channel: stable
+
+ spotify:
+  name: spotify
+  channel: stable
+
+ filezilla:
+  name: filezilla
+  channel: beta
+
+postman:
+  name: postman
+  channel: stable
 
 
 ## TODO: Install
@@ -54,14 +66,12 @@ packages:
  - zsh
  - htop
  - terminator
- - python3.6
  - python3-pip
  - docker-ce
  - virtualbox
  - jq
  - google-chrome-stable
  - sublime-text
- - spotify-client
  - meld
  - peek
  - kazam
@@ -78,9 +88,6 @@ debs:
   name: InSync
   url: https://d2t3ff60b2tol4.cloudfront.net/builds/insync_3.3.6.40933-focal_amd64.deb
 
- postman:
-  name: Postman
-  url: https://dl.pstmn.io/download/latest/linux64
 
 targzs:
  jetbrains_toolbox:
