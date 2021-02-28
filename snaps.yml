@@ -4,8 +4,17 @@
 
 - name: Install snaps
   become: yes
-  snap:
-    name: "{{ item.value.name }}"
-    channel: "{{ item.value.channel }}"
-    classic: "{{ item.value.classic }}"
-  with_dict: "{{ snaps }}"
+  snaps:
+    slack:
+      name: slack
+      classic: yes
+
+    spotify:
+      name: spotify
+
+    filezilla:
+      name: filezilla
+      channel: beta
+
+    postman:
+      name: postman

@@ -1,7 +1,0 @@
----
-- include_vars: vars.yml
-
-
-- name: Install snaps
-  snap:
-    name: "{{ snaps }}"
