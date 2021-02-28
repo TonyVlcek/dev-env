@@ -27,6 +27,27 @@ ppas:
  - ppa:agornostal/ulauncher
  - ppa:linuxuprising/shutter
 
+snaps:
+ slack:
+  name: slack
+  channel: stable
+  classic: yes
+
+ spotify:
+  name: spotify
+  channel: stable
+  classic: no
+
+ filezilla:
+  name: filezilla
+  channel: beta
+  classic: no
+
+ postman:
+  name: postman
+  channel: stable
+  classic: no
+
 
 ## TODO: Install
 # [x] Peek
