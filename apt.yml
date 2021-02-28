@@ -17,7 +17,8 @@
 - name: Add from PPAs
   become: yes
   apt_repository:
-    repo: "{{ ppas }}"
+    repo: "{{ item }}"
+  with_list: "{{ ppas }}"
 
 
 - name: Install packages
