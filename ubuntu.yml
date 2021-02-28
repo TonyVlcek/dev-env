@@ -1,10 +1,10 @@
 ---
 - hosts: localhost
   tasks:
-#   - include: apt.yml
-#   - include: deb-packages.yml
-#   - include: targz-apps.yml
-#   - include: binaries.yml
+   - include: apt.yml
+   - include: deb-packages.yml
+   - include: targz-apps.yml
+   - include: binaries.yml
    - include: snaps.yml
    - include: docker.yml
    - include: pip.yml
