@@ -4,7 +4,7 @@
 
 - name: Install snaps
   become: yes
-  snaps:
+  snap:
     slack:
       name: slack
       classic: yes
