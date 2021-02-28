@@ -53,7 +53,7 @@ sudo apt-get --assume-yes install git
 
 # Clone dev-env repo if not already present
 if [ ! -d ".dev-env" ]; then
-  git clone https://github.com/pbassiner/dev-env.git .dev-env
+  git clone https://github.com/TonyVlcek/dev-env.git .dev-env
 fi
 
 # Checkout specified branch
@@ -61,4 +61,4 @@ cd .dev-env
 git checkout ${BRANCH}
 
 # Run Ansible playbook
-ansible-playbook ubuntu.yml -i hosts -vv ${ANSIBLE_ARGS}
+# ansible-playbook ubuntu.yml -i hosts -vv ${ANSIBLE_ARGS}

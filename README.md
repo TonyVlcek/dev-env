@@ -5,11 +5,11 @@ Development Environment Configuration with Ansible
 
 # Run it
 ```shell
-wget -qO- https://raw.github.com/pbassiner/dev-env/master/bootstrap.sh | bash
+wget -qO- https://raw.github.com/TonyVlcek/dev-env.git/master/bootstrap.sh | bash
 ```
 For testing purposes `bootstrap.sh` allows to define the branch with `-b|--branch <BRANCH>` (default is `master`):
 ```shell
-wget -qO- https://raw.github.com/pbassiner/dev-env/master/bootstrap.sh | bash -s -- -b test-branch
+wget -qO- https://raw.github.com/TonyVlcek/dev-env.git/master/bootstrap.sh | bash -s -- -b test-branch
 ```
 
 # Disclaimer
